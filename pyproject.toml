@@ -1,0 +1,28 @@
+[project]
+name = "doubleparked"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "DahTach", email = "francesco.tacinelli@gmail.com"},
+]
+dependencies = [
+    "ultralytics",
+    "imagesize",
+    "opencv-python",
+    "dill",
+    "numpy",
+    "scikit-learn"
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.scripts]
+doubleparked = "doubleparked.main:main"
+
+[tool.pdm]
+distribution = true
